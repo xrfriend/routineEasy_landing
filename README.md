@@ -16,3 +16,7 @@
  - 위치 기반 서비스(Location-based service, LBS)
  - 반복되는 루틴을 쇼핑에 연결!
  - 기다리는 상황을 최소화하여 빠르게 소비자에게 이어질 수 있도록 돕는 스마트한 서비스
+
+***
+## 설문에 응해 주세요.👌👌👌👌👌👌
+- 😍[설문하러가기](https://docs.google.com/forms/d/e/1FAIpQLSdRT5YC-qo-WtTrkbKU9BaziPDPCmzk2ZdAZRuVPajcIXkCIg/viewform)

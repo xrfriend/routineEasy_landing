@@ -142,7 +142,7 @@ footer {
     }
 
     .img01 {
-        background-image: url('/assets/img/01_img01.png');
+        background-image: url('./assets/img/01_img01.png');
         background-size: 70%;
         background-repeat: no-repeat;
         width: 60vw;
@@ -157,7 +157,7 @@ footer {
     }
 
     .img01.active {
-        background-image: url('/assets/img/01_img01.png');
+        background-image: url('./assets/img/01_img01.png');
         background-size: 70%;
         background-repeat: no-repeat;
         width: 60vw;
@@ -172,7 +172,7 @@ footer {
     }
 
     .img02 {
-        background-image: url('/assets/img/01_img02.png');
+        background-image: url('./assets/img/01_img02.png');
         background-size: 70%;
         background-repeat: no-repeat;
         width: 60vw;
@@ -187,7 +187,7 @@ footer {
     }
 
     .img02.active {
-        background-image: url('/assets/img/01_img02.png');
+        background-image: url('./assets/img/01_img02.png');
         background-size: 70%;
         background-repeat: no-repeat;
         width: 60vw;

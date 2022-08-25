@@ -1,4 +1,4 @@
-# 루틴이지(RoutineEasy)
+# 루틴이지(Routineasy)
 
 ***
 ## Instroduction

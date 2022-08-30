@@ -829,9 +829,9 @@ footer {
 
     section.second {
         background-color: var(--white-color);
-        height: 100vh;
-        width: 100%;
+        
         margin: 0 auto;
+        padding:10px;
     }
     section.second > .row{
         flex-direction: column;
@@ -839,8 +839,9 @@ footer {
 
     section.third {
         background-color: var(--white-color);
-        width: 100%;
+        
         margin: 0 auto;
+        padding:10px;
     }
 
     section.fourth {
@@ -848,11 +849,22 @@ footer {
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: 34%;
-        height: 100vh;
-        width: 100%;
         margin: 0 auto;
+        padding:10px;
     }
+    .usage-card-img > img{
+        width:90%;
+    }
+    .cartoon-img{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:10px;
+    }
+    .cartoon-img > img{
+        width:90%;
 
+    }
     .mt-first {
         margin-top: 50px !important;
     }
@@ -862,7 +874,7 @@ footer {
     }
 
     .mt-400 {
-        margin-top: 400px !important;
+        margin-top: 0px !important;
     }
 
     .mt-280 {
@@ -874,7 +886,7 @@ footer {
     }
 
     .mt-80 {
-        margin-top: 80px !important;
+        margin-top: 20px !important;
     }
 
     .mt-40 {
@@ -894,11 +906,11 @@ footer {
     }
 
     .width-second {
-        width: 100%;
+        width: 90%;
     }
 
     .w1660 {
-        width: 1660px;
+        width: 100%;
     }
 
     .between {
@@ -941,10 +953,11 @@ footer {
     }
 
     span.tiny {
-        font-size: 25px;
+        font-size: 18px;
         line-height: 1.9em;
         font-weight: 400;
         color: var(--pick-color);
+        margin-bottom:20px;
 
     }
 
@@ -952,8 +965,8 @@ footer {
         background-image: url('../img/01_img01.png');
         background-size: 70%;
         background-repeat: no-repeat;
-        width: 60vw;
-        height: 100vh;
+        width: 100vw;
+        height: 50vh;
         display: block;
         position: absolute;
         right: 0;
@@ -966,14 +979,14 @@ footer {
     .img01.active {
         background-size: 70%;
         background-repeat: no-repeat;
-        width: 60vw;
-        height: 100vh;
+        width: 100vw;
+        height: 50vh;
         display: block;
         position: absolute;
         right: 0;
         bottom: 0;
         background-position-x: 140%;
-        background-position-y: 180%;
+        background-position-y: 120%;
         transition: 0.5s ease all;
     }
 
@@ -981,8 +994,8 @@ footer {
         background-image: url('../img/01_img02.png');
         background-size: 70%;
         background-repeat: no-repeat;
-        width: 60vw;
-        height: 100vh;
+        width: 100vw;
+        height: 50vh;
         display: block;
         position: absolute;
         right: 0;
@@ -995,8 +1008,8 @@ footer {
     .img02.active {
         background-size: 70%;
         background-repeat: no-repeat;
-        width: 60vw;
-        height: 100vh;
+        width: 100vw;
+        height: 50vh;
         display: block;
         position: absolute;
         right: 0;
@@ -1013,27 +1026,24 @@ footer {
     }
 
     .cartoon-box {
-        margin-top: -4px;
     }
 
     .cartoon-footer {
-        margin-left: auto;
-        display: flex;
-        justify-content: flex-end;
-        width: 804px;
+        
     }
 
     .cartoon-footer>div {
         background-color: var(--primary-color);
-        width: 100%;
+        width: 89%;
         height: 120px;
         transform: translateY(-4px);
         border: 1.5px solid #000;
-        font-size: 33px;
+        font-size: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: 800;
+        margin:0 auto;
     }
 
     .cartoon-label {
@@ -1049,36 +1059,37 @@ footer {
     }
 
     .cartoon-label.first {
-        width: 420px;
+        width: 90%;
         height: 63px;
         position: absolute;
-        transform: translate(-30px, 25px);
+        transform: translate(10px, 15px);
         box-shadow: -8px 10px 1px 1px #000000cc;
         z-index: 99;
     }
 
     .cartoon-label.second {
-        width: 420px;
+        width: 90%;
         height: 63px;
         position: absolute;
-        transform: translate(20px, 25px);
+        transform: translate(10px, 15px);
         box-shadow: -8px 10px 1px 1px #000000cc;
         z-index: 99;
     }
 
     .cartoon-label.third {
-        width: 420px;
+        width: 90%;
         height: 63px;
         position: absolute;
-        transform: translate(-30px, 25px);
+        transform: translate(10px, 15px);
         box-shadow: -8px 10px 1px 1px #000000cc;
         z-index: 99;
     }
 
     .cartoon-label.last {
-        width: 402px;
+        width: 90%;
         height: 63px;
         padding-top: 20px;
+        margin-left:10px;
         position: absolute;
         background-color: #ffffff00;
         border: 0px solid #000;
@@ -1129,6 +1140,16 @@ footer {
         transform: translate(-40px, -730px) matrix(0.5, 0, 0, 0.5, 0, 0);
         transition: 0.5s ease all;
     }
+    .row.w1660.between{
+        flex-direction: column;
+    }
+    .usage-card-img {
+        display: flex;
+        justify-content: center;
+    }
+    .usage-card:nth-child(2), .usage-card:nth-child(3){
+        margin-top:180px;
+    }
 
     /* .usage-card-img.first:hover>.when-hover-phone1 {
         opacity: 1;
@@ -1141,10 +1162,11 @@ footer {
     .footer-illust {
         background-image: url('../img/illust001.png');
         background-repeat: no-repeat;
-        transform: translateY(-357px);
+        background-size: contain;
+        transform: translateY(-302px);
         opacity: 1;
-        width: 614px;
-        height: 414px;
+        width: 390px;
+        height: 260px;
         position: absolute;
         right: 0;
         transition: 0.5s ease all;
@@ -1155,16 +1177,18 @@ footer {
         background-repeat: no-repeat;
         transform: translateY(-357px);
         opacity: 1;
-        width: 614px;
-        height: 414px;
+        width: 400px;
+        height: 260px;
         position: absolute;
         right: 0;
         transition: 0.5s ease all;
     }
 
     .footer-title {
-        font-size: 50px;
+        padding:10px;
+        font-size: 36px;
         font-weight: 800;
+        text-align: center;
         transition: 0.3s ease all;
     }
 

@@ -912,14 +912,45 @@ footer {
         padding:10px;
     }
 
+    
     section.fourth {
-        background-image: url('../img/hand.png');
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 34%;
-        margin: 0 auto 400px auto;
+        height: 1070px;
+        width: 100%;
+        margin: 0 auto;
         padding:10px;
     }
+    .fourth > .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .phone-with{
+        background-image: url(../img/hand.png);
+        background-repeat: no-repeat;
+        background-position: initial;
+        background-size: contain;
+        width: 100%;
+        height: 800px;
+    }
+    .handphone{
+        width: 150px;
+        opacity:0;
+        margin-left:34px;
+        margin-top:11px;
+        transform: matrix3d(1, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transition: 1s ease all;
+    }
+    .handphone.active{
+        opacity:1;
+        width: 150px;
+        margin-left:34px;
+        margin-top:11px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transition: 1s ease all;
+        
+    }
+
+
     .usage-card-img > img{
         width:90%;
     }
@@ -1012,8 +1043,16 @@ footer {
         margin-top: initial;
         margin-bottom: initial;
         color: var(--pick-color);
-
+        opacity:0;
+        transform:translateY(200px);
+        transition: 1s ease all;
     }
+    h2.active{
+        opacity:1;
+        transform:translateY(0px);
+        transition: 1s ease all;
+    }
+
 
     p.desc {
         font-size: 32px;
@@ -1021,6 +1060,14 @@ footer {
         font-weight: 400;
         color: var(--pick-color);
         margin: initial;
+        opacity:0;
+        transform:translateY(200px);
+        transition: 1s ease all;
+    }
+    p.desc.active{
+        opacity:1;
+        transform:translateY(0px);
+        transition: 1s ease all;
     }
 
     span.tiny {
@@ -1029,7 +1076,15 @@ footer {
         font-weight: 400;
         color: var(--pick-color);
         margin-bottom:20px;
+        opacity:0;
+        transform:translateY(200px);
+        transition: 1s ease all;
 
+    }
+    span.tiny.active {
+        opacity:1;
+        transform:translateY(0px);
+        transition: 1s ease all;
     }
 
     .img01 {
@@ -1057,7 +1112,7 @@ footer {
         right: 0;
         bottom: 0;
         background-position-x: 140%;
-        background-position-y: 120%;
+        background-position-y: 205%;
         transition: 0.5s ease all;
     }
 
@@ -1086,7 +1141,7 @@ footer {
         right: 0;
         bottom: 0;
         background-position-x: 32%;
-        background-position-y: 65%;
+        background-position-y: 205%;
         transition: 0.5s ease all;
     }
 
@@ -1097,6 +1152,12 @@ footer {
     }
 
     .cartoon-box {
+        opacity:0;
+        transition: 0.5s ease all;
+    }
+    .cartoon-box.active {
+        opacity:1;
+        transition: 0.5s ease all;
     }
 
     .cartoon-footer {
@@ -1207,7 +1268,12 @@ footer {
         display: block;
         opacity: 0;
         position: absolute;
-        transform: translate(-40px, -730px) matrix(0.5, 0, 0, 0.5, 0, 0);
+        transform: translate(0px, 170px) matrix(0.5, 0, 0, 0.5, 0, 0);
+        transition: 0.5s ease all;
+    }
+    .when-hover-phone1.active {
+        opacity: 1;
+        transform: translate(0px, 170px) matrix(1, 0, 0, 1, 0, 0);
         transition: 0.5s ease all;
     }
     .row.w1660.between{
@@ -1239,6 +1305,7 @@ footer {
         height: 260px;
         position: absolute;
         right: 0;
+        margin-bottom: -18px;
         transition: 0.5s ease all;
     }
 

@@ -87,7 +87,10 @@ footer {
     justify-content: center;
     line-height: 1em;
 }
-
+.nointer{
+    opacity: 1 !important;
+    transform:initial !important;
+}
 
 
 @media all and (min-width:1024px) {
@@ -123,13 +126,38 @@ footer {
     }
 
     section.fourth {
-        background-image: url('../img/hand.png');
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 34%;
         height: 100vh;
         width: 1660px;
         margin: 0 auto;
+    }
+    .fourth > .row{
+        justify-content: space-between;
+    }
+    
+    .phone-with{
+        background-image: url(../img/hand.png);
+        background-repeat: no-repeat;
+        background-position: initial;
+        background-size: contain;
+        width: 514px;
+        height: 800px;
+    }
+    .handphone{
+        width: 205px;
+        margin-left: 48px;
+        margin-top: 13px;
+        opacity:0;
+        transform: matrix3d(1, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transition: 1s ease all;
+    }
+    .handphone.active{
+        opacity:1;
+        width: 205px;
+        margin-left: 48px;
+        margin-top: 13px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transition: 1s ease all;
+        
     }
 
     .mt-first {
@@ -208,8 +236,16 @@ footer {
         margin-top: initial;
         margin-bottom: initial;
         color: var(--pick-color);
-
+        opacity:0;
+        transform:translateY(200px);
+        transition: 1s ease all;
     }
+    h2.active{
+        opacity:1;
+        transform:translateY(0px);
+        transition: 1s ease all;
+    }
+
 
     p.desc {
         font-size: 53px;
@@ -217,6 +253,15 @@ footer {
         font-weight: 400;
         color: var(--pick-color);
         margin: initial;
+        opacity:0;
+        transform:translateY(200px);
+        transition: 1s ease all;
+    }
+    p.desc.active{
+        opacity:1;
+        transform:translateY(0px);
+        transition: 1s ease all;
+
     }
 
     span.tiny {
@@ -224,8 +269,16 @@ footer {
         line-height: 1.9em;
         font-weight: 400;
         color: var(--pick-color);
-
+        opacity:0;
+        transform:translateY(200px);
+        transition: 1s ease all;
     }
+    span.tiny.active {
+        opacity:1;
+        transform:translateY(0px);
+        transition: 1s ease all;
+    }
+
 
     .img01 {
         background-image: url('../img/01_img01.png');
@@ -293,6 +346,13 @@ footer {
 
     .cartoon-box {
         margin-top: -4px;
+        opacity:0;
+        transition: 0.5s ease all;
+        
+    }
+    .cartoon-box.active {
+        opacity:1;
+        transition: 0.5s ease all;
     }
 
     .cartoon-footer {
@@ -409,11 +469,11 @@ footer {
         transition: 0.5s ease all;
     }
 
-    /* .usage-card-img.first:hover>.when-hover-phone1 {
+    .when-hover-phone1.active {
         opacity: 1;
         transform: translate(-40px, -730px) matrix(1, 0, 0, 1, 0, 0);
         transition: 0.5s ease all;
-    } */
+    }
 
 
 

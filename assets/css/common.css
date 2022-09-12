@@ -896,6 +896,10 @@ footer {
         height: 100vh;
         padding-left: 10px;
     }
+    section.masthead > .row{
+        display: flex;
+        flex-direction: column;
+    }
 
     section.second {
         background-color: var(--white-color);
@@ -1036,7 +1040,7 @@ footer {
 
     h2 {
         font-size: 32px;
-        line-height: 1.47em;
+        line-height: 1.4em;
         font-weight: 800;
         margin-left: initial;
         margin-right: initial;
@@ -1056,7 +1060,7 @@ footer {
 
     p.desc {
         font-size: 32px;
-        line-height: 1.47em;
+        line-height: 1.3em;
         font-weight: 400;
         color: var(--pick-color);
         margin: initial;
@@ -1072,7 +1076,7 @@ footer {
 
     span.tiny {
         font-size: 14px;
-        line-height: 1.9em;
+        line-height: 1.5em;
         font-weight: 400;
         color: var(--pick-color);
         margin-bottom:20px;

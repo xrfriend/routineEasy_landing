@@ -107,9 +107,38 @@ footer {
 
     section.masthead {
         background-color: var(--primary-color);
+        
         border-radius: 0 0 0 35%;
         height: 100vh;
         padding-left: 158px;
+        
+    }
+    .bganimation{
+        background-image: url(../img/bg_arrow.png);
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name:bganimation;
+    }
+    @keyframes bganimation {
+        0%{
+            background-position-y: 100%;
+            background-position-x: 100%;
+            
+            
+        }
+        100%{
+            background-position-y: 0%;
+            background-position-x: 50%;
+            
+            
+        }
+    }
+    .masthead-title{
+        width:50%;
+    }
+    .headerimagesection{
+        width:50%;
     }
 
     section.second {
@@ -133,14 +162,20 @@ footer {
     .fourth > .row{
         justify-content: space-between;
     }
-    
+    .phone-with.active{
+        background-position-y: 0px;
+        transition: 1s ease all;
+        
+    }
     .phone-with{
-        background-image: url(../img/hand.png);
+        background-image: url(../img/04.png);
         background-repeat: no-repeat;
         background-position: initial;
         background-size: contain;
         width: 514px;
         height: 800px;
+        background-position-y: 300px;
+        transition: 1s ease all;
     }
     .handphone{
         width: 205px;
@@ -278,6 +313,24 @@ footer {
         transform:translateY(0px);
         transition: 1s ease all;
     }
+    .headerimage{
+        width:100%;
+        transform:translateX(50%) translateY(10%);
+        transition: 1s ease all;        
+
+    }
+    .headerimage.active{
+        transform:translateX(10%) translateY(10%);
+        transition: 1s ease all;
+    }
+    .headerimage > img{
+        width:100%;
+    }
+
+    .headerimagesection{
+        display:flex;
+        justify-content: flex-end;
+    }
 
 
     .img01 {
@@ -291,10 +344,12 @@ footer {
         right: 0;
         bottom: 0;
         background-position-x: 200%;
-        background-position-y: 480%;
+        background-position-y: 180%;
         transition: 0.5s ease all;
     }
-
+    .img02 > img{
+        width:300px
+    }
     .img01.active {
         background-size: 70%;
         background-repeat: no-repeat;
@@ -310,7 +365,8 @@ footer {
     }
 
     .img02 {
-        background-image: url('../img/01_img02.png');
+        
+        /* background-image: url('../img/01_img02.png');
         background-size: 70%;
         background-repeat: no-repeat;
         width: 60vw;
@@ -320,12 +376,13 @@ footer {
         right: 0;
         bottom: 0;
         background-position-x: 142%;
-        background-position-y: 405%;
-        transition: 0.5s ease all;
+        background-position-y: 65%;
+        transition: 0.5s ease all; */
     }
 
     .img02.active {
-        background-size: 70%;
+        
+        /* background-size: 70%;
         background-repeat: no-repeat;
         width: 60vw;
         height: 100vh;
@@ -335,7 +392,7 @@ footer {
         bottom: 0;
         background-position-x: 32%;
         background-position-y: 65%;
-        transition: 0.5s ease all;
+        transition: 0.5s ease all; */
     }
 
     .cartoon-wrap {
@@ -547,13 +604,33 @@ footer {
     }
 
     section.fourth {
-        background-image: url('../img/hand.png');
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 34%;
+        
         height: 100vh;
         width: 1660px;
         margin: 0 auto;
+    }
+    .fourth > .row{
+        display: flex;
+        flex-direction: row;
+        padding:10px;
+    }
+    .fourth > .row > .col{
+        width:50%;
+    }
+    .phone-with.active{
+        background-position-y: 70px;
+        transition: 1s ease all;
+    }
+    .phone-with{
+        background-image: url(../img/04.png);
+        background-repeat: no-repeat;
+        background-position: initial;
+        background-size: contain;
+        width: 100%;
+        height: 940px;
+        background-position-y: 0px;
+        background-position-x: 50px;
+        transition: 1s ease all;
     }
 
     .mt-first {
@@ -650,6 +727,47 @@ footer {
         color: var(--pick-color);
 
     }
+    .headerimagesection{
+        display:flex;
+        justify-content: center;
+    }
+    .bganimation{
+        background-image: url(../img/bg_arrow.png);
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name:bganimation;
+    }
+    @keyframes bganimation {
+        0%{
+            background-position-y: 100%;
+            background-position-x: 100%;
+            
+            
+        }
+        100%{
+            background-position-y: 0%;
+            background-position-x: 50%;
+            
+            
+        }
+    }
+
+
+    .headerimage{
+        width:100%;
+        transform:translateX(50%) translateY(10%);
+        transition: 1s ease all;        
+
+    }
+    .headerimage.active{
+        transform:translateX(10%) translateY(10%);
+        transition: 1s ease all;
+    }
+    .headerimage > img{
+        width:80%;
+    }
+
 
     .img01 {
         background-image: url('../img/01_img01.png');
@@ -893,7 +1011,7 @@ footer {
     section.masthead {
         background-color: var(--primary-color);
         border-radius: 0 0 0 35%;
-        height: 100vh;
+        height: 800px;
         padding-left: 10px;
     }
     section.masthead > .row{
@@ -927,14 +1045,19 @@ footer {
         flex-direction: column;
         padding:10px;
     }
-    
+    .phone-with.active{
+        background-position-y: 70px;
+        transition: 1s ease all;
+    }
     .phone-with{
-        background-image: url(../img/hand.png);
+        background-image: url(../img/04.png);
         background-repeat: no-repeat;
         background-position: initial;
         background-size: contain;
-        width: 320px;
+        width: 100%;
         height: 500px;
+        background-position-y: 300px;
+        transition: 1s ease all;
     }
     .handphone{
         opacity: 0;
@@ -1151,6 +1274,52 @@ footer {
         background-position-x: 32%;
         background-position-y: 205%;
         transition: 0.5s ease all;
+    }
+
+
+    .bganimation{
+        background-image: url(../img/bg_arrow.png);
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name:bganimation;
+    }
+    @keyframes bganimation {
+        0%{
+            background-position-y: 100%;
+            background-position-x: 0%;
+            
+            
+        }
+        100%{
+            background-position-y: 0%;
+            background-position-x: -500%;
+            
+            
+        }
+    }
+    .mastheadsection{
+        height:100vh;
+        justify-content: space-between;
+    }
+
+    .headerimage{
+        width:100%;
+        transform:translateX(50%) translateY(10%);
+        transition: 1s ease all;        
+
+    }
+    .headerimage.active{
+        transform:translateX(10%) translateY(10%);
+        transition: 1s ease all;
+    }
+    .headerimage > img{
+        width:120%;
+    }
+
+    .headerimagesection{
+        display:flex;
+        justify-content: center;
     }
 
     .cartoon-wrap {
